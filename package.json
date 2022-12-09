@@ -1,0 +1,31 @@
+{
+  "name": "cafeteria",
+  "version": "1.0.0",
+  "description": "Sprendiendo SASS, GULP, CSS grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "https://github.com/Eli421/cafeteria"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eli421/cafeteria.git"
+  },
+  "author": "Elizabeth @eli421",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eli421/cafeteria/issues"
+  },
+  "homepage": "https://github.com/Eli421/cafeteria#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ]
+}
