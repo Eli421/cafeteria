@@ -4,7 +4,8 @@ const{ src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const sourcemaps = require ('gulp-sourcemaps')
+const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('cssnano');
 
 // Imagenes
 // const imagemin = require('gulp-imagemin');
@@ -13,9 +14,9 @@ function css( done ) {
     //compilar sass a
     //pasos: 1. indentificar archivo 2.compilar 3. Guardar el css \
     src('src/scss/app.scss')
-        .pipe (sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(postcss([autoprefixer()])) 
+        .pipe(postcss([autoprefixer(), cssnano()])) 
         .pipe(sourcemaps.write('.'))
         .pipe(dest('build/css'))
 
